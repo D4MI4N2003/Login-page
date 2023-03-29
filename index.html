@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">LOGO</h2>
+        <nav class="navigation">
+            <a href="a">Home</a>
+            <a href="a">Services</a>
+            <a href="a">About us</a>
+            <a href="a">Contact</a>
+            <button id="login-button">Login</button>
+        </nav>
+    </header>
+    
+    <div class="login-form">
+    <div id="login-box">
+        <h2> Login</h2>
+        <form>
+			<input type="text" id="username" name="username" placeholder="Username"><br>
+			<input type="password" id="password" name="password" placeholder="Password"><br>
+            <label><a href="a">Forgot password?</a></label>
+            <div class="logbtn">
+            
+                <input type="submit" class="log" value="Login">
+            </div>
+            </form>
+            <div class="register-box">
+                <button id="register">Create Account</button>
+            </div>
+    </div>
+        <div id="reg-box">
+            <h2>Register</h2>
+            <form>
+                <input type="text" id="rusername" name="rusername" placeholder="Username"><br>
+                <input type="text" id="email" name="email" placeholder="E-mail"><br>
+                <input type="password" id="rpassword" name="rpassword" placeholder="Password"><br>
+                <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password"><br>
+                <input type="checkbox" id="terms" name="terms">I accept terms & services
+                <div class="regbtn">
+                
+                    <input type="submit" class="reg" value="Register">
+                </div>
+                </form>
+                <div class="back">
+                    <button id="backbtn">Already have account</button>
+                </div>
+            
+        </div>
+    </div> 
+    
+ 
+    
+
+    <script>
+        
+            
+            const loginButton = document.querySelector('#login-button');
+            const loginformm = document.querySelector('#login-box');
+            const createbtn = document.querySelector('#register');
+            const registerform = document.querySelector('#reg-box');
+            const backbutton = document.querySelector('#backbtn');
+
+            registerform.style.display = 'none';
+
+            function toggleForms()
+            {
+                loginformm.style.display = loginformm.style.display === 'none' ? 'block': 'none';
+                registerform.style.display = registerform.style.display === 'none' ? 'block': 'none';
+            }
+            function log()
+            {
+                if(loginformm.style.display == 'block')
+                {
+                    loginformm.style.display = 'none';
+                }
+                else 
+                {
+                loginformm.style.display = 'block';
+                registerform.style.display= 'none';
+                }
+                
+            }
+            loginButton.addEventListener('click', () => {
+                log();
+            });
+            createbtn.addEventListener('click', () => {
+                toggleForms();
+            });
+            backbutton.addEventListener('click', ()=> {
+                toggleForms();
+            });
+            
+			  
+        
+		
+	</script>
+    <footer>
+        <p>&copy 2023<br>D4MI4N2003 </p>
+    </footer>
+
+</body>
+</html> 

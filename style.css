@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&family=Kanit:wght@100&display=swap');
+
+body
+{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background: url("images/bg.jpg");
+    background-size: cover;
+}
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Konit', sans-serif;
+}
+header
+{
+    position:fixed;
+    padding: 20px 100px;
+    width: 100%;
+    font-size: 1.1em;
+    margin:0;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99px; 
+}
+.logo
+{
+    font-size: 2.2em;
+}
+.navigation a
+{
+    text-decoration:none;
+    color: white;
+    margin-left:30px;
+    transition: 0.6s;
+}
+.navigation a:hover
+{
+    text-decoration:underline;
+    
+}
+
+#login-button
+{
+    margin-left: 30px;
+    width:100px;
+    height:50px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius:4px;
+    color: white;
+    transition: 0.5s;
+}
+#login-button:hover
+{
+    background-color: white;
+    color: black;
+}
+.login-form
+{
+    display: flex;
+    padding: 20px 100px;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    width: 100%;
+    
+}
+#login-box
+{
+    color: white;
+    justify-items:  center;
+    align-items: center;
+    padding: 20px;
+    height: 450px;
+    width: 400px;
+    border: #FFF6FF 0.3px solid;
+    border-radius: 6px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    text-align: center;
+    display: none;
+    
+}
+#login-box h2, #reg-box h2
+{
+     font-size: 2.2em;
+     margin-bottom: 40px;
+}
+#password, #username, #email, #rpassword, #cpassword, #rusername
+{
+    height:20px;
+    width:200px;
+    transition: 0.3s;
+    background: transparent;
+    margin: 10px;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+}
+#password:focus , #username:focus, #email:focus, #rpassword:focus, #rusername:focus, #cpassword:focus
+{
+    height: 40px;
+    width: 220px;
+    
+}
+.logbtn, .back, .regbtn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log , #register, #backbtn, .reg
+{
+    height: 30px;
+    width: 270px;
+    margin: 15px;
+    background: transparent;
+    border: 1px solid #fff6ff;
+    transition: 0.3s;
+    color: white;
+    border-radius: 3px;
+}
+.log:hover,#register:hover, #backbtn:hover, .reg:hover
+{
+    background: #fff6ff;
+    color: black;
+}
+.register-box
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    clear:both;
+    font-size: 0.7em;
+}
+#login-box a, #reg-box a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 0.7em;
+    transition: 0.2s;
+}
+#login-box a:hover
+{
+    color: aqua;
+}
+#reg-box
+{
+    color: white;
+    justify-items:  center;
+    align-items: center;
+    padding: 20px;
+    height: 450px;
+    width: 400px;
+    border: #FFF6FF 0.3px solid;
+    border-radius: 6px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    text-align: center;
+}
+footer
+{
+    color: white;
+    align-self: end;
+    text-align:center;
+    font-size: 0.5em;
+}
